@@ -2334,10 +2334,6 @@ static int _mmc_suspend(struct mmc_host *host, bool is_suspend)
 		memcpy(&host->cached_ios, &host->ios, sizeof(host->cached_ios));
 		if (!host->partial_init_broken)
 #endif
-<<<<<<< HEAD
-		if (!host->partial_init_broken)
-=======
->>>>>>> 17243b2b8b1d8288f60abeeb6c9690d848aca40f
 			mmc_cache_card_ext_csd(host);
 	}
 	if (mmc_can_sleep(host->card))
